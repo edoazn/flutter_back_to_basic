@@ -1,6 +1,6 @@
 # flutter_back_to_basic
 
-A new Flutter project.
+this a documentation for my remembering and exploring flutter from basic again.
 
 ## Getting Started
 
