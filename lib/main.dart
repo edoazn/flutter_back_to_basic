@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_back_to_basic/02_display_widgets/container.dart';
 import 'package:flutter_back_to_basic/02_display_widgets/images_widget.dart';
 import 'package:flutter_back_to_basic/screens/dashboard.dart';
 
@@ -9,11 +10,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: 'Flutter Basic', home: Dashboard(),
-    routes: {
-      '/dashboard' : (context) => const Dashboard(),
-      '/images-widget' : (context) => const ImagesWidget(),
-    },
+    return MaterialApp(
+      title: 'Flutter Basic',
+      debugShowCheckedModeBanner: false,
+      home: Dashboard(),
+      routes: {
+        '/dashboard': (context) => const Dashboard(),
+        '/images-widget': (context) => const ImagesWidget(),
+        '/container-widget': (context) => const ContainerWidget(),
+      },
     );
   }
 }

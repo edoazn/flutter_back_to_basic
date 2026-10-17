@@ -22,12 +22,21 @@ class Dashboard extends StatelessWidget {
               padding: const EdgeInsets.all(16),
               child: Column(
                 children: [
+                  // Images Widget
                   ElevatedButton(
                     onPressed: () {
                       Navigator.pushNamed(context, '/images-widget');
                     },
                     child: const Text('Images Widget'),
-                  )
+                  ),
+
+                  // Containter Widget
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/container-widget');
+                    },
+                    child: const Text('Container Widget'),
+                  ),
                 ],
               ),
             ),
@@ -37,4 +46,3 @@ class Dashboard extends StatelessWidget {
     );
   }
 }
-
