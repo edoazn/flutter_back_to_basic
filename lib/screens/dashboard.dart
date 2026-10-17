@@ -37,6 +37,23 @@ class Dashboard extends StatelessWidget {
                     },
                     child: const Text('Container Widget'),
                   ),
+
+                  // Button Widget
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/button-widget');
+                    },
+                    child: const Text('Button Widget'),
+
+
+                    // ),// Containter Widget
+                    // ElevatedButton(
+                    //   onPressed: () {
+                    //     Navigator.pushNamed(context, '/container-widget');
+                    //   },
+                    //   child: const Text('Container Widget'),
+                    // ),
+                  ),
                 ],
               ),
             ),
