@@ -7,7 +7,7 @@ class Dashboard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Azn'),
+        title: Text('Dashboard'),
         actions: [
           Image.asset('assets/images/img_avatar.png', height: 30, width: 30),
         ],
@@ -17,11 +17,19 @@ class Dashboard extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset('assets/images/img_timer.png', height: 120, width: 200),
-            Padding(padding: EdgeInsets.only(bottom: 20)),
-            Text(
-              "Selamat Datang, Tamu Undangan!",
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+            // List Halaman latihan
+            Container(
+              padding: const EdgeInsets.all(16),
+              child: Column(
+                children: [
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/images-widget');
+                    },
+                    child: const Text('Images Widget'),
+                  )
+                ],
+              ),
             ),
           ],
         ),
@@ -29,3 +37,4 @@ class Dashboard extends StatelessWidget {
     );
   }
 }
+
