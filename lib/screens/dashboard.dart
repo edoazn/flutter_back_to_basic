@@ -1,7 +1,28 @@
 import 'package:flutter/material.dart';
 
-class Dashboard extends StatelessWidget {
+class Dashboard extends StatefulWidget {
   const Dashboard({super.key});
+
+  @override
+  State<Dashboard> createState() => _DashboardState();
+}
+
+class _DashboardState extends State<Dashboard> {
+  List<String> routeTitle = [
+    "Image",
+    "Container",
+    "Button",
+    "Layout",
+    "Listview",
+  ];
+
+  List<String> routeName = [
+    '/images-widget',
+    '/container-widget',
+    '/button-widget',
+    '/layout-widget',
+    '/listview-widget',
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -13,58 +34,17 @@ class Dashboard extends StatelessWidget {
         ],
       ),
       body: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            // List Halaman latihan
-            Container(
-              padding: const EdgeInsets.all(16),
-              child: Column(
-                children: [
-                  // Images Widget
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.pushNamed(context, '/images-widget');
-                    },
-                    child: const Text('Images Widget'),
-                  ),
-
-                  // Containter Widget
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.pushNamed(context, '/container-widget');
-                    },
-                    child: const Text('Container Widget'),
-                  ),
-
-                  // Button Widget
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.pushNamed(context, '/button-widget');
-                    },
-                    child: const Text('Button Widget'),
-                  ),
-
-                  // Layout Widget
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.pushNamed(context, '/layout-widget');
-                    },
-                    child: const Text('Layout Widget'),
-                  ),
-
-                  // List View Widget
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.pushNamed(context, '/listview-widget');
-                    },
-                    child: const Text('List View Widget'),
-                  ),
-                ],
-              ),
-            ),
-          ],
+        child: ListView.builder(
+          itemCount: routeName.length,
+          itemBuilder: (context, index) {
+            return ListTile(
+              title: Text(routeTitle[index]),
+              trailing: Icon(Icons.arrow_forward_ios),
+              onTap: () {
+                Navigator.pushNamed(context, routeName[index]);
+              },
+            );
+          },
         ),
       ),
     );
