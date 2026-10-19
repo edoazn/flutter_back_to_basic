@@ -53,6 +53,14 @@ class Dashboard extends StatelessWidget {
                     },
                     child: const Text('Layout Widget'),
                   ),
+
+                  // List View Widget
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/listview-widget');
+                    },
+                    child: const Text('List View Widget'),
+                  ),
                 ],
               ),
             ),
