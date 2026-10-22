@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_back_to_basic/02_display_widgets/button.dart';
 import 'package:flutter_back_to_basic/02_display_widgets/container.dart';
+import 'package:flutter_back_to_basic/02_display_widgets/drawer.dart';
 import 'package:flutter_back_to_basic/02_display_widgets/images_widget.dart';
 import 'package:flutter_back_to_basic/02_display_widgets/layout.dart';
 import 'package:flutter_back_to_basic/02_display_widgets/listview.dart';
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
         '/button-widget': (context) => const ButtonScreen(),
         '/layout-widget': (context) => const LayoutScreen(),
         '/listview-widget': (context) => ListviewScreen(),
+        '/drawer-widget': (context) => DrawerScreen(),
       },
     );
   }
