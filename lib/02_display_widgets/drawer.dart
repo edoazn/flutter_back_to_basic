@@ -16,7 +16,7 @@ class DrawerScreen extends StatelessWidget {
               accountEmail: Text("Mengcode@gmai.com"),
               decoration: BoxDecoration(color: Colors.lightBlue),
               currentAccountPicture: CircleAvatar(
-                foregroundImage: AssetImage("assets/images/nj_logo.png"),
+                foregroundImage: AssetImage("assets/images/my_hearin.jpg"),
               ),
             ),
             ListTile(
