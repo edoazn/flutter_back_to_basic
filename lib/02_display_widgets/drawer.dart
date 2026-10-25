@@ -11,28 +11,12 @@ class DrawerScreen extends StatelessWidget {
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
-            DrawerHeader(
-              decoration: BoxDecoration(color: Colors.blue),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  CircleAvatar(
-                    child: Image.asset(
-                      "assets/images/img_avatar.png",
-                      // width: 300.0,
-                      height: 500.0,
-                      fit: BoxFit.contain,
-                    ),
-                  ),
-                  Text(
-                    "Username",
-                    style: TextStyle(
-                      color: Colors.greenAccent,
-                      fontSize: 18.0,
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
-                ],
+            UserAccountsDrawerHeader(
+              accountName: Text("Meng Code"),
+              accountEmail: Text("Mengcode@gmai.com"),
+              decoration: BoxDecoration(color: Colors.lightBlue),
+              currentAccountPicture: CircleAvatar(
+                foregroundImage: AssetImage("assets/images/nj_logo.png"),
               ),
             ),
             ListTile(
