@@ -74,7 +74,6 @@ class DrawerScreen extends StatelessWidget {
                   ),
                 ),
               ),
-
               // Container 2
               Row(
                 children: [
@@ -148,7 +147,6 @@ class DrawerScreen extends StatelessWidget {
                   ),
                 ],
               ),
-
               // Container 3
               Container(
                 height: 200.0,
@@ -193,7 +191,6 @@ class DrawerScreen extends StatelessWidget {
                   ],
                 ),
               ),
-
               // Container 4
               Column(
                 crossAxisAlignment: CrossAxisAlignment.center,

@@ -15,7 +15,8 @@ class _DashboardState extends State<Dashboard> {
     "Layout",
     "Listview",
     "Drawer",
-    "Floating Action Button"
+    "Floating Action Button",
+    "Stack and Positioned"
   ];
 
   List<String> routeName = [
@@ -26,6 +27,7 @@ class _DashboardState extends State<Dashboard> {
     '/listview-widget',
     '/drawer-widget',
     '/fba-widget',
+    '/stack-positioned-widget',
   ];
 
   @override
